@@ -4,4 +4,7 @@ install:
   - bundle install
 
 script:
+  - gem install jekyll-sitemap
+  - gem install jekyll-feed
+  - gem install jekyll-paginate
   - jekyll build
