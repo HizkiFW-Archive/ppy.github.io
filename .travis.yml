@@ -13,6 +13,7 @@ script:
   - gem install jekyll-feed
   - gem install jekyll-paginate
   - jekyll build
+  - mkdir "${TRAVIS_BUILD_DIR}/public"
 
 deploy:
   provider: pages
