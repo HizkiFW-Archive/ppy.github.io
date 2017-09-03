@@ -7,6 +7,7 @@ install:
   - tar xfv hugo.tgz -C ~/_bin
   - rm hugo.tgz ~/_bin/*.md
   - export PATH=$HOME/_bin:$PATH
+  - mkdir ~/public
 
 script:
   - gem install jekyll-sitemap
@@ -18,7 +19,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: public
+  local_dir: ~/public
   target_branch: gh-pages
   on:
     branch: master
