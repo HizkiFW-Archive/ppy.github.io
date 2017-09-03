@@ -3,7 +3,7 @@ language: go
 install:
   - bundle install
   - mkdir ~/_bin
-  - curl https://github.com/gohugoio/hugo/releases/download/v0.26/hugo_0.26_Linux-64bit.tar.gz -O hugo.tgz
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.26/hugo_0.26_Linux-64bit.tar.gz -O hugo.tgz
   - tar xfv hugo.tgz -C _bin
   - rm hugo.tgz _bin/*.md
   - export PATH=$HOME/_bin:$PATH
